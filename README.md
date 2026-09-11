@@ -1,6 +1,6 @@
 # erdos-release-index
 
-An index to thirty-three public repositories of mathematics: Erdős problem attacks, Lean
+An index to thirty-six public repositories of mathematics: Erdős problem attacks, Lean
 formalizations, computational certificates, papers, and the record of what failed.
 
 Author: Jared Wilder. Released 2026-09-10.
@@ -80,6 +80,14 @@ believe the rest.
 | [erdos-attack-logs](https://github.com/jaredwilder/erdos-attack-logs) | Erdős 345, 835, and **950 refuted**, published under its own name |
 | [erdos-computational-searches](https://github.com/jaredwilder/erdos-computational-searches) | A 4.6×10¹¹ exhaustion frontier for Erdős 850, and the prior-art verdict that retired the lane: **Langevin 1993, "a correct rediscovery, not a discovery"** |
 | [erdos-findings-ledger](https://github.com/jaredwilder/erdos-findings-ledger) | 51 verdicts with claim ceilings, including **a fabricated benchmark citation the author caught and retracted** |
+
+## Added after the index was first written
+
+| repository | contents |
+|---|---|
+| [kreisel-kurz-heptagon-extension](https://github.com/jaredwilder/kreisel-kurz-heptagon-extension) | An **exact Diophantine reduction** of the integral-octagon existence question over Q(sqrt 2002). Both Kreisel-Kurz heptagons reconstructed exactly; a master quartic with four linkage equations linear in the squares; the three-point sub-condition shown to be a **genus-zero conic**, so all difficulty sits in four stacked square-conditions. Verdict REDUCED, not closed. |
+| [zero-sum-theorem-closures](https://github.com/jaredwilder/zero-sum-theorem-closures) | A deterministic generator **saturating at 889 typed theorems** from 27 seeds over 7 generations, independently re-verified with **10,528,320 assignment checks and modelCalls: 0** |
+| [erdos-lean-remainder](https://github.com/jaredwilder/erdos-lean-remainder) | Two finished proofs, and **73 formalization attempts of which 70 still contain sorry** |
 
 ## Earlier repositories
 
