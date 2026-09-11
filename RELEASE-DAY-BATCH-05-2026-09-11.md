@@ -62,11 +62,40 @@ If there are infinitely many cluster primes, then every positive even integer is
 
 **Authority boundary:** exact hardness reduction, not progress on Maillet itself. The novelty audit classified the implication as `APPARENTLY_UNRECORDED_REDUCTION` after targeted search, with medium confidence; specialist priority checking remains required. The packet also records why an older attempted twin-prime implication was false.
 
+## Headline upgrade recovered during this batch — Erdős #949
+
+The #949 public packet was strengthened materially after locating the exact public formal source that the earlier receipt ledger had treated as missing.
+
+Natural-language packet: `jaredwilder/unpublished-math-papers/erdos949-sumfree-ip/README.md`  
+Latest theorem-packet commit: `84c4cef7c44c0ab124418b649e9ab7a93707e210`
+
+Formal source home: `jaredwilder/erdos-theorems/theorems/erdos949-campaign-001/`  
+Formal-source README commit: `e9435df0f81148c7e6d26aafa96ea8f4b01de8b0`  
+Receipt-ledger correction commit: `3890c474e2ebebf5d9adf6923a54c1c914391302`
+
+The strongest theorem is not merely pairwise `A+A` avoidance. For every arbitrary sum-free `S⊆R`, there is an infinite `A⊂N_{>0}` such that for **every nonempty finite subset** `T⊆A`, both `sum(T)` and `2 sum(T)` lie outside `S`. Equivalently,
+
+`FS(A) ∩ S = ∅` and `2 FS(A) ∩ S = ∅`.
+
+`Erdos949HindmanFS.lean` publicly verifies this full finite-sums theorem. Its receipt records:
+
+```text
+status=VERIFIED
+backend=scaleway-box
+exitCode=0
+seconds=6.83
+sorryFree=true
+sha256=f4130c29f345afc9b264aa2331199433f6f0bfdd9dc7e224a49123a60970b9ac
+replication runs=2
+identicalOutput=true
+```
+
+The sharp `q<=5` universal theorem and sharpness witness are also publicly verified in `Erdos949Core.lean`.
+
+**External/status boundary:** the unrestricted continuum-cardinality parent problem remains open. Public 2026 work handles measurable/Baire-property `S` at continuum cardinality. The distinct axis here is an arbitrary-`S`, full finite-sums theorem. Historical priority remains a specialist question; Hindman's theorem itself is classical.
+
 ## Existing headline assets this batch sits beside
 
-These were already public before Batch 05 and are not duplicated here:
-
-- Erdős #949: sharp finite constant `5`, countable complement theorem, finite-real-dilate IP theorem, and finite-homomorphism semigroup envelope.
 - `C(13,6,3)`: two validated 21-covers plus a heavily compressed hypothetical-20 structure; the exact value remains `20<=C(13,6,3)<=21` until a replayable 20-cover UNSAT certificate exists.
 - Erdős #486: summable forbidden residue mass implies ordinary density, with quantitative tail error and a positive-density criterion.
 - Erdős #247: exact-hypothesis irrationality in every integer base and eventual-periodicity characterization; folklore risk remains.
@@ -90,4 +119,4 @@ In particular:
 
 ## Saturation
 
-Release saturation is **not declared**. The contradiction-history payload, ORE-v1 payload bytes, semantic-review/formalizer queues, and long-tail theorem estate remain live release surfaces.
+Release saturation is **not declared**. The contradiction-history payload, ORE-v1 payload bytes, formalizer queues, historical proof archives, duplicate reconciliation and long-tail theorem estate remain live release surfaces.
