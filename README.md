@@ -2,7 +2,7 @@
 
 A living index to Jared Wilder's September 2026 public mathematics release: theorems, exact finite results, formal proofs, computational certificates, papers, open-problem corpora, research archives, and the evidence needed to check them.
 
-**Start with the mathematics.** Each entry says what the result is and how it was established. Corrections and failed routes remain public, but they do not replace the description of unrelated successful work.
+**Start with the mathematics.** Each entry says what the result is and how it was established. Corrections and failed approaches remain public, but they do not replace the description of unrelated successful work.
 
 Author: Jared Wilder. Release began 2026-09-10. This index is append-only while the release continues to expand.
 
@@ -17,25 +17,25 @@ For the broader cross-subject map and historical-scale comparison, see [`open-ma
 | repository | result |
 |---|---|
 | [integral-point-sets](https://github.com/jaredwilder/integral-point-sets) | **`d(2,8) > 30000`** for integral octagons in general position, improving the hereditary lower bound 22270. Also includes **394 impossibility certificates** and exact values `d(2,4)=8`, `d(2,5)=73`, `d(2,6)=174`. |
-| [erdos902-tournament-f4](https://github.com/jaredwilder/erdos902-tournament-f4) | A computational **candidate `f(4) >= 49`** against the published lower bound 48, independently reproduced with a stated McKay–Spence completeness dependency. The repo also contains roughly 150 sorry-free Lean theorems on the surrounding tournament structure. |
-| [graham-alspach-sequenceability](https://github.com/jaredwilder/graham-alspach-sequenceability) | Graham/Alspach sequenceability verified for subset sizes **21–28 in `Z_29` and 21–30 in `Z_31`**, extending beyond the published general range 20. |
+| [erdos902-tournament-f4](https://github.com/jaredwilder/erdos902-tournament-f4) | A computational **candidate `f(4) >= 49`** against the published lower bound 48. The finite repair-capacity calculation reproduces exactly; the remaining dependency is completeness of the cited McKay–Spence tournament catalogue. The repository also contains roughly 150 sorry-free Lean theorems on the surrounding structure. |
+| [graham-alspach-sequenceability](https://github.com/jaredwilder/graham-alspach-sequenceability) | Graham–Alspach sequenceability verified for subset sizes **21–28 in `Z_29` and 21–30 in `Z_31`**, extending beyond the published general range 20. |
 | [graham-alspach-extended](https://github.com/jaredwilder/graham-alspach-extended) | Further verified ranges for **`Z_37`, `Z_41`, `Z_43`, and `Z_61`**, covering **22,082,109 subsets** with independent Go/Python verification. |
-| [erdos1084-harborth](https://github.com/jaredwilder/erdos1084-harborth) | A correction to formal-conjecture metadata: a variant marked research-open follows from Harborth 1974, together with a formalized lower-bound lane. |
+| [erdos1084-harborth](https://github.com/jaredwilder/erdos1084-harborth) | A correction to formal-conjecture metadata: a variant marked research-open follows from Harborth 1974, together with Lean formalization work on the corresponding bound. |
 | [erdos376-successor-frontier](https://github.com/jaredwilder/erdos376-successor-frontier) | An explicit **1,006-digit integer above `10^1000`** satisfying simultaneous base-3/base-5/base-7 digit restrictions, independently reproduced with matching SHA-256. |
-| [ck-sequences](https://github.com/jaredwilder/ck-sequences) | **59 exact optimal values of `C_k(N)`** across `k=3,4,5`, each with an optimal solver certificate and directly checked witness. |
+| [ck-sequences](https://github.com/jaredwilder/ck-sequences) | **59 exact optimal values of `C_k(N)`** across `k=3,4,5`, each with solver proof of optimality and a directly checked witness. |
 
 ### Exact finite mathematics and certificate-backed results
 
 | repository | result |
 |---|---|
-| [erdos203](https://github.com/jaredwilder/erdos203) | Finite prime-fibre obstruction calculus for Erdős–Graham #203. **G29 proves the first common-period shell with raw fibre mass >1 is impossible for every phase assignment**, with exact bound `823/840 < 1`; G30 checks all 2,880 phases of the `{5,7,11,13}` core with maximum union density `353/720`. |
+| [erdos203](https://github.com/jaredwilder/erdos203) | Finite prime-fibre obstruction calculus for Erdős–Graham #203. **G29 proves the first common-period fibre family with raw density >1 cannot cover for any phase assignment**, with exact bound `823/840 < 1`; G30 checks all 2,880 phases of the `{5,7,11,13}` core with maximum union density `353/720`. |
 | [additive-combinatorics-campaigns](https://github.com/jaredwilder/additive-combinatorics-campaigns) | First 13-element C3-free set has **minimum span exactly 60**; all 13-sets of span at most 63 are classified as 6 sets in 4 orbits; eight-element C5-free minimum span is **exactly 25**; a carry-free construction has exponent **`log_7(3) > 1/2`**; and a Lean theorem is backed by a shipped **447,254-addition LRAT proof**. |
-| [combinatorial-records](https://github.com/jaredwilder/combinatorial-records) | Binary Sidon **`f(7) >= 24`**, 677 covering-number rows, exact finite-field classifications, circulant Ramsey-family exhaustions, Lonely Runner theorem-bank material, `C(13,6,3)` witnesses/structure, automata, and additive-encoding theorems. |
-| [zero-sum-theorem-closures](https://github.com/jaredwilder/zero-sum-theorem-closures) | A finite derivation system starting from **27 seeds** reaches a fixed point after 7 generations with **889 typed theorems**; the closure was independently re-executed with **10,528,320 direct assignments checked**. |
-| [erdos-straus-progressions](https://github.com/jaredwilder/erdos-straus-progressions) | Two complete iff classifications for Erdős–Straus solutions whose denominators lie in arithmetic or geometric progression, with executable verification. |
+| [combinatorial-records](https://github.com/jaredwilder/combinatorial-records) | Binary Sidon **`f(7) >= 24`**, 677 covering-number rows, exact finite-field classifications, circulant Ramsey-family exhaustions, Lonely Runner theorem material, `C(13,6,3)` witnesses/structure, automata, and additive-encoding theorems. |
+| [zero-sum-theorem-closures](https://github.com/jaredwilder/zero-sum-theorem-closures) | A finite derivation system starting from **27 seeds** reaches a fixed point after 7 generations with **889 typed theorems**; independent replay checks **10,528,320 direct assignments**. |
+| [erdos-straus-progressions](https://github.com/jaredwilder/erdos-straus-progressions) | Two complete iff classifications for Erdős–Straus solutions whose denominators lie in arithmetic or geometric progression, with independent computational checks. |
 | [ck-gold-and-r3-envelope](https://github.com/jaredwilder/ck-gold-and-r3-envelope) | **380 verified finite `r_3` bounds** derived from explicit rules and witnesses, plus **36 finite `C_k` searches** with stated domains and witnesses. |
 | [kreisel-kurz-heptagon-extension](https://github.com/jaredwilder/kreisel-kurz-heptagon-extension) | Exact Diophantine reduction of the integral-octagon extension question over `Q(sqrt(2002))`: master quartic, four square-linkage equations, genus-zero conic base, exact field localization, and millions of certified exact cells. |
-| [erdos-proved-lemmas](https://github.com/jaredwilder/erdos-proved-lemmas) | A bank of finished lemmas and reductions extracted from open-problem work, including independently rechecked results for Erdős 978, 126, 1107, and 893 and structural results for 396, 373, 602, 774, 1142, and 289. |
+| [erdos-proved-lemmas](https://github.com/jaredwilder/erdos-proved-lemmas) | Finished lemmas and reductions extracted from larger Erdős projects, including independently rechecked results for 978, 126, 1107, and 893 and structural results for 396, 373, 602, 774, 1142, and 289. |
 
 ### Formal mathematics
 
@@ -43,11 +43,11 @@ For the broader cross-subject map and historical-scale comparison, see [`open-ma
 |---|---|
 | [erdos902](https://github.com/jaredwilder/erdos902) | Kernel-checked tournament mathematics for Schütte/Erdős #902: the classical sandwich, exact small values, `48 <= f(4) <= 67`, exact order-49 Cayley eliminations, DRT(23) structure, QR23 symmetry, repair capacities, dominator cubes, private-cover barriers, and factorization falsifiers. |
 | [erdos-theorems](https://github.com/jaredwilder/erdos-theorems) | **79 Lean declarations across 20 files and 15 Erdős problems**, all with clean axiom-footprint accounting. |
-| [lean-forge-graph-theory](https://github.com/jaredwilder/lean-forge-graph-theory) | **218 standalone sorry-free Lean theorem files** on C4-free/K4-free and related graph structure, with 217 machine receipts. |
+| [lean-forge-graph-theory](https://github.com/jaredwilder/lean-forge-graph-theory) | **218 standalone sorry-free Lean theorem files** on C4-free/K4-free and related graph structure, with verification records for 217. |
 | [erdos595-barrier-tower](https://github.com/jaredwilder/erdos595-barrier-tower) | **27 sorry-free Lean files** proving a sharp coverability barrier: every graph on at most continuum many vertices is countably triangle-free-coverable, while non-coverability begins at the successor of the continuum; additional cofinality/component consequences are formalized. |
 | [lean-contributions](https://github.com/jaredwilder/lean-contributions) | A **1,473-line zero-sorry Steiner triple-system/Kirkman development** in Mathlib style, plus a statement formalization/API for Erdős 1066, the ten-module HumuFinisher project, and standalone formal files. |
-| [erdos-lean-remainder](https://github.com/jaredwilder/erdos-lean-remainder) | Two finished kernel-clean proof packets, including the Erdős 503 orthogonal-join/isoceles-number development and an Erdős 289 reciprocal-sum bound, alongside unfinished formalization work. |
-| [erdos-close-campaigns](https://github.com/jaredwilder/erdos-close-campaigns) | **`rothNumberNat 14 = 8` and `rothNumberNat 15 = 8`**, the first exact values of Mathlib's canonical `rothNumberNat`, plus a supermultiplicativity lemma absent from Mathlib and other sealed lemmas. |
+| [erdos-lean-remainder](https://github.com/jaredwilder/erdos-lean-remainder) | Two completed kernel-clean proof developments: Erdős 503 orthogonal joins/exact isosceles numbers and an Erdős 289 reciprocal-sum finite bound, alongside unfinished formalization records and SAT instances. |
+| [erdos-close-campaigns](https://github.com/jaredwilder/erdos-close-campaigns) | **`rothNumberNat 14 = 8` and `rothNumberNat 15 = 8`**, the first exact values of Mathlib's canonical `rothNumberNat`, plus a supermultiplicativity lemma absent from Mathlib, a formalized classical lower bound, and additional structural lemmas. |
 
 ---
 
@@ -55,38 +55,39 @@ For the broader cross-subject map and historical-scale comparison, see [`open-ma
 
 | repository | contents |
 |---|---|
-| [eg203-kummer-papers](https://github.com/jaredwilder/eg203-kummer-papers) | **Nineteen LaTeX sources and eighteen compiled PDFs** from the EG203/Kummer program, including the sharp dichotomy at `l log l ~ log Q` and surrounding conductor/descent/Iwasawa/Kummer work. |
-| [erdos203-obstruction-calculus](https://github.com/jaredwilder/erdos203-obstruction-calculus) | A **16-lemma finite subgroup-obstruction calculus** with exact local densities/moments, CRT synchronization, projective Kummer slopes, a density-zero schema, and a conditional Kummer-distribution criterion. |
+| [eg203-kummer-papers](https://github.com/jaredwilder/eg203-kummer-papers) | **Nineteen LaTeX sources and eighteen compiled PDFs** from the EG203/Kummer program, including subgroup-obstruction mathematics, conductor/descent/Iwasawa structure, the sharp dichotomy at `l log l ~ log Q`, conditional distribution criteria, and a separate analysis of insufficient approaches. |
+| [erdos203-obstruction-calculus](https://github.com/jaredwilder/erdos203-obstruction-calculus) | A **16-lemma finite subgroup-obstruction calculus** with exact local densities/moments, CRT synchronization, projective Kummer slopes, a density-zero framework, and a conditional Kummer-distribution criterion. |
 | [unpublished-math-papers](https://github.com/jaredwilder/unpublished-math-papers) | A large public subject archive: Erdős/Kummer papers, Ramsey and finite-field classifications, exact structured-denominator theorems, theorem banks, formal packets, additive/fiber-coherence programs, integral-distance work, and dozens of focused problem extractions. |
-| [erdos710-descent-and-1044](https://github.com/jaredwilder/erdos710-descent-and-1044) | An observed prime-descent law for Erdős 710 with five held-out primes, five sealed Hall-matching theorems, and a closed form for the Erdős 1044 extremal family. |
+| [erdos710-descent-and-1044](https://github.com/jaredwilder/erdos710-descent-and-1044) | An observed prime-descent law for Erdős 710 tested through `n<=114` with five held-out primes, five Lean Hall-matching theorems, and a closed form for the Erdős 1044 extremal family. |
+| [eg203-eg411-corpus](https://github.com/jaredwilder/eg203-eg411-corpus) | A large working corpus containing 125 EG203 Lean files, large finite searches, arithmetic/formal results, additional obstruction theory, and 19 compiled papers, with historical corrections separated from current result descriptions. |
 
 ---
 
 ## Large research archives and formalization corpora
 
-These repositories preserve large bodies of material with mixed internal evidence levels. Read their summaries before treating a raw count as a theorem count.
+These repositories preserve large bodies of material with mixed internal evidence levels. Their counts describe archives, not synthetic theorem totals.
 
 | repository | scale |
 |---|---|
-| [msl-ore-estate](https://github.com/jaredwilder/msl-ore-estate) | A large research archive containing **322,370 math-bearing recovered fields**, **65,834 problem-scoped distinct normalized mathematical texts**, **21,146 formula/identity/inequality occurrences**, **3,306 Lean declarations**, **2,858 proof/closure obligations**, and a **238-entry curated mathematical catalog**. Selected results have been extracted into subject repositories. |
-| [erdos-campaign-archive](https://github.com/jaredwilder/erdos-campaign-archive) | **266 research campaigns across 241 distinct Erdős problems**, 2,979 files and 215 Lean files, preserving successful, refuted, and null routes together. |
+| [msl-ore-estate](https://github.com/jaredwilder/msl-ore-estate) | **322,370 math-bearing recovered fields**, **65,834 problem-scoped distinct normalized mathematical texts**, **21,146 formula/identity/inequality occurrences**, **3,306 Lean declarations**, **2,858 proof/closure obligations**, and a **238-entry curated mathematical catalog**. Selected results are extracted into subject repositories. |
+| [erdos-campaign-archive](https://github.com/jaredwilder/erdos-campaign-archive) | **266 automated proof-search runs across 241 distinct Erdős problems**, 2,979 files and 215 Lean files, preserving proofs, bounds, refutations, failed approaches, prior-art findings, and null results. |
 | [erdos-cable-corpus](https://github.com/jaredwilder/erdos-cable-corpus) | **914 Lean files across 152 problems** with 937 receipts: 211 clean-footprint compiled files, 266 textually sorry-free files without a clean-footprint verdict, 267 compile failures, 23 files containing `sorry`, and 147 files with no joined receipt. |
-| [erdos152](https://github.com/jaredwilder/erdos152) | **160 Lean formalizations of Erdős problem statements**, with 159 main statements left as `sorry` and a semantic audit that detected all 58 independently known-bad examples. |
+| [erdos152](https://github.com/jaredwilder/erdos152) | **160 Lean formalizations of Erdős problem statements**: one proved main statement, 159 main statements left as `sorry`, and a semantic audit detecting all 58 independently known-bad examples. |
 | [oracle-math-honest-inventory](https://github.com/jaredwilder/oracle-math-honest-inventory) | **725 public mathematical records**: 494 proposed, 163 finite-checked, 46 proved in prose, and 22 source-asserted/unclassified, with evidence level attached to each entry. |
-| [erdos-ore-findings](https://github.com/jaredwilder/erdos-ore-findings) | Results re-mined from a 30,438-object archive, including a longest-composite-run computation, an infinite Pell family, binomial-prime-factor counterexamples, and a larger Pass-3 extraction. |
+| [erdos-ore-findings](https://github.com/jaredwilder/erdos-ore-findings) | Mathematics recovered from a 30,438-object historical archive, including independently recomputed composite-run, Pell-family, and binomial-prime-factor results; a larger extraction found 97 mathematical families missing from an earlier theorem index. |
 
 ---
 
-## Open-problem data, verification, and audit tools
+## Open-problem data, verification, and formalization audits
 
 | repository | contents |
 |---|---|
-| [open-math-frontier](https://github.com/jaredwilder/open-math-frontier) | **9,926 source-attributed open mathematical targets**, **8,501 with callable finite/mechanical checkers**, plus the release maps and historical-scale comparison. |
+| [open-math-frontier](https://github.com/jaredwilder/open-math-frontier) | **9,926 source-attributed open mathematical targets**, **8,501 with executable checkers**, plus release maps, formalization status, published-bound metadata, and the historical-scale comparison. |
 | [frontier-math-target-data](https://github.com/jaredwilder/frontier-math-target-data) | Open-problem registries, structural problem classifications, a normalized catalog of published techniques, and the Erdős database. |
 | [lean-semantic-blades](https://github.com/jaredwilder/lean-semantic-blades) | **33 deterministic semantic checks** for Lean formalizations, run over the 160-file companion corpus; the suite detects all 58 examples independently known to be semantically defective. |
 | [graham-alspach-certificates](https://github.com/jaredwilder/graham-alspach-certificates) | Certificate bank behind the sequenceability results, including **60,134 `Z_29` certificate rows**, independent Go/Python checkers, deliberately corrupted controls, and deterministic regeneration. |
-| [erdos-computational-searches](https://github.com/jaredwilder/erdos-computational-searches) | A **`4.646 × 10^11` Erdős 850 frontier** and an exact Erdős 273 parity-split reduction, with source, receipts, and prior-art reconciliation. |
-| [erdos835-lean-audit](https://github.com/jaredwilder/erdos835-lean-audit) | A focused axiom audit showing which apparently green Erdős 835 Lean claims depend on `native_decide` or upstream `sorryAx`, and which small claims are clean. |
+| [erdos-computational-searches](https://github.com/jaredwilder/erdos-computational-searches) | A **`4.646 × 10^11` Erdős 850 search frontier** and an exact Erdős 273 parity-split reduction, with source, receipts, and prior-art reconciliation. |
+| [erdos835-lean-audit](https://github.com/jaredwilder/erdos835-lean-audit) | A formal dependency audit showing that the proposed Erdős 835 lower-bound proof inherits upstream `sorryAx`, while identifying the smaller claims that use `native_decide` and those with clean footprints. |
 
 ---
 
@@ -96,28 +97,28 @@ These repositories are intentionally about mistakes, dead ends, or historical cl
 
 | repository | record |
 |---|---|
-| [erdos-findings-ledger](https://github.com/jaredwilder/erdos-findings-ledger) | **52 mathematical result records** linking each statement to its evidence, verification method, and exact scope, with later corrections attached where needed. |
-| [erdos-attack-logs](https://github.com/jaredwilder/erdos-attack-logs) | Research logs, computations, route decisions, refutations, and prior-art findings across multiple Erdős problems. |
+| [erdos-findings-ledger](https://github.com/jaredwilder/erdos-findings-ledger) | **52 mathematical result records** linking statements to evidence, verification methods, and later corrections. |
+| [erdos-attack-logs](https://github.com/jaredwilder/erdos-attack-logs) | Research logs, computations, refutations, and prior-art findings across multiple Erdős problems. |
 | [eg411-superseded-closure-claims](https://github.com/jaredwilder/eg411-superseded-closure-claims) | Superseded closure claims preserved in their original form with the later correction record. |
-| [erdos411-retraction-record](https://github.com/jaredwilder/erdos411-retraction-record) | The research packets and retraction history preserved together rather than silently rewritten. |
+| [erdos411-retraction-record](https://github.com/jaredwilder/erdos411-retraction-record) | Historical research packets and their associated retraction record. |
 
-The rule throughout the release is simple: **the mathematical statement says what was established; the evidence tells you how strongly it is supported; the correction record tells you what changed.**
+The rule throughout the release is simple: **the mathematical statement says what was established; the evidence tells you how it is supported; the correction record tells you what changed.**
 
 ---
 
 ## Reproduction status
 
-A release-day verifier sweep re-ran 14 documented executable verifiers from committed source; all 14 exited successfully after two undocumented invocation arguments were corrected in the documentation.
+A release-day sweep reran 14 documented executable verifiers from committed source; all 14 completed successfully after two missing command-line arguments were corrected in the documentation.
 
-The exhaustive exact-integer computation behind **`d(2,8) > 30000`** was also rerun and reproduced its committed receipt in every field except wall-clock time: **136,801,313 cells, 6 solutions, 0 non-trivial extensions, correctness gate 6/6, and byte-identical exact-coordinate records**.
+The exhaustive exact-integer computation behind **`d(2,8) > 30000`** was also rerun and reproduced its committed receipt in every field except wall-clock time: **136,801,313 cells, 6 solutions, 0 non-trivial extensions, all six correctness checks passed, and exact-coordinate records matched byte for byte**.
 
-The purpose of the reproduction layer is practical: the important claims should be independently checkable from what is public.
+The point of this material is practical: important claims should be independently checkable from what is public.
 
 ---
 
 ## Reading rule
 
-Do not infer a theorem count from repository count, file count, historical workflow labels, or raw archive size. This release contains different mathematical objects: theorems, exact finite computations, candidate bounds, classifications, formalizations, certificate rows, papers, research routes, counterexamples, and retractions.
+Do not infer a theorem count from repository count, file count, historical workflow labels, or raw archive size. The release contains different mathematical objects: theorems, exact finite computations, candidate bounds, classifications, formalizations, certificate rows, papers, research routes, counterexamples, and retractions.
 
 Read the statement first. Then inspect the proof, certificate, computation, or formal file appropriate to that statement. Historical novelty is a separate literature question.
 
