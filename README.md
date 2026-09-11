@@ -34,21 +34,24 @@ For the broader cross-subject map and historical-scale audit, see
 
 | repository | result |
 |---|---|
+| [erdos203](https://github.com/jaredwilder/erdos203) | Finite prime-fibre obstruction calculus for Erdős–Graham #203. **G29 proves the first common-period shell with raw fibre mass >1 is impossible for every phase assignment**, with exact bound `823/840 < 1`; G30 exhausts all 2,880 phases of the `{5,7,11,13}` core with maximum union density `353/720`. |
 | [additive-combinatorics-campaigns](https://github.com/jaredwilder/additive-combinatorics-campaigns) | First 13-element C3-free set has **minimum span exactly 60**; all 13-sets of span <=63 classified as 6 sets in 4 orbits; eight-element C5-free minimum span **exactly 25**; a carry-free construction with exponent **log_7(3) > 1/2**; and a kernel-checked theorem backed by a **447,254-addition LRAT proof** shipped in full. |
 | [combinatorial-records](https://github.com/jaredwilder/combinatorial-records) | Binary Sidon **f(7) >= 24**, 677 covering-number rows, exact finite-field classifications, Ramsey exhaustions, Lonely Runner theorem-bank material, C(13,6,3) witnesses/structure, automata and additive-encoding theorem banks. |
 | [zero-sum-theorem-closures](https://github.com/jaredwilder/zero-sum-theorem-closures) | A deterministic derivation system saturating at **889 typed theorems** from 27 seeds over 7 generations, independently re-executed with **10,528,320 direct assignments and modelCalls: 0**. |
 | [erdos-straus-progressions](https://github.com/jaredwilder/erdos-straus-progressions) | Two complete iff classifications for Erdős-Straus solutions whose denominators lie in arithmetic or geometric progression, with independent verifier runs. |
 | [ck-gold-and-r3-envelope](https://github.com/jaredwilder/ck-gold-and-r3-envelope) | **380 machine-derived and verified r_3 bounds**, each carrying its witness, derivation family and superseded weaker bound, plus bounded C_k campaign evidence. |
-| [kreisel-kurz-heptagon-extension](https://github.com/jaredwilder/kreisel-kurz-heptagon-extension) | Exact Diophantine reduction of the integral-octagon extension question over Q(sqrt(2002)): master quartic, four square-linkage equations, and a genus-zero conic subcondition. |
+| [kreisel-kurz-heptagon-extension](https://github.com/jaredwilder/kreisel-kurz-heptagon-extension) | Exact Diophantine reduction of the integral-octagon extension question over Q(sqrt(2002)): master quartic, four square-linkage equations, genus-zero conic base, exact field localization and millions of certified exact cells. |
+| [erdos-proved-lemmas](https://github.com/jaredwilder/erdos-proved-lemmas) | A newly extracted bank of finished lemmas/reductions from open-problem campaigns, including independently re-checked results for Erdős 978, 126, 1107 and 893 and structural results for 396, 373, 602, 774, 1142 and 289. |
 
 ### Formal mathematics
 
 | repository | scale |
 |---|---|
+| [erdos902](https://github.com/jaredwilder/erdos902) | Kernel-checked tournament mathematics for Schütte/Erdős #902: the classical sandwich `(n+2)2^(n-1)-1 <= f(n) <= n+3n^2 2^n`, exact small values, the finite window `48 <= f(4) <= 67`, exact order-49 Cayley eliminations, DRT(23) structure, QR23 symmetry, repair capacities, dominator cubes, private-cover barriers and factorization falsifiers. |
 | [erdos-theorems](https://github.com/jaredwilder/erdos-theorems) | **79 Lean declarations across 20 files and 15 Erdős problems**, with clean axiom-footprint accounting. |
 | [lean-forge-graph-theory](https://github.com/jaredwilder/lean-forge-graph-theory) | **218 standalone Lean theorem files**, all textually sorry-free, on C4-free/K4-free and related graph structure. |
 | [erdos595-barrier-tower](https://github.com/jaredwilder/erdos595-barrier-tower) | **27 sorry-free Lean files** proving a sharp coverability barrier: every graph on at most continuum many vertices is countably triangle-free-coverable, while non-coverability begins at the successor of the continuum; additional cofinality/component consequences are formalized. |
-| [lean-contributions](https://github.com/jaredwilder/lean-contributions) | A **1,473-line zero-sorry Steiner triple-system/Kirkman development** in Mathlib style, plus a first statement formalization/API for Erdős 1066 and other Lean work. |
+| [lean-contributions](https://github.com/jaredwilder/lean-contributions) | A **1,473-line zero-sorry Steiner triple-system/Kirkman development** in Mathlib style, plus a first statement formalization/API for Erdős 1066, the ten-module HumuFinisher project and standalone formal files. |
 | [erdos-lean-remainder](https://github.com/jaredwilder/erdos-lean-remainder) | Two finished kernel-clean proof packets, including the Erdős 503 orthogonal-join/isoceles-number development and an Erdős 289 reciprocal-sum bound, alongside the unfinished formalizer tail. |
 | [erdos-close-campaigns](https://github.com/jaredwilder/erdos-close-campaigns) | **rothNumberNat 14 = 8 and rothNumberNat 15 = 8**, the first exact values of Mathlib's canonical `rothNumberNat`, plus a supermultiplicativity lemma absent from Mathlib and other sealed lemmas. |
 
@@ -60,7 +63,7 @@ For the broader cross-subject map and historical-scale audit, see
 |---|---|
 | [eg203-kummer-papers](https://github.com/jaredwilder/eg203-kummer-papers) | **Nineteen LaTeX sources and eighteen compiled PDFs** from the EG203/Kummer program, including the Sharp Dichotomy at `l log l ~ log Q` and the surrounding conductor/descent/Iwasawa/Kummer work. |
 | [erdos203-obstruction-calculus](https://github.com/jaredwilder/erdos203-obstruction-calculus) | A **16-lemma finite subgroup-obstruction calculus** with exact local densities/moments, CRT synchronization, projective Kummer slopes, a density-zero schema and a conditional Kummer-distribution criterion. |
-| [unpublished-math-papers](https://github.com/jaredwilder/unpublished-math-papers) | Five finished or near-finished mathematical writeups, including a six-source combinatorial-sieve preprint and the Graham/Alspach certificate paper. |
+| [unpublished-math-papers](https://github.com/jaredwilder/unpublished-math-papers) | A large release-day subject archive recovered from the estate: Erdős/Kummer papers, Ramsey and finite-field classifications, exact structured-denominator theorems, theorem banks, formal packets, additive/fiber-coherence programs, integral-distance work, and dozens of focused problem extractions with authority classes preserved. |
 | [erdos710-descent-and-1044](https://github.com/jaredwilder/erdos710-descent-and-1044) | An observed prime-descent law for Erdős 710 with five held-out primes, five sealed Hall-matching theorems, and a closed form for the Erdős 1044 extremal family. |
 
 ---
@@ -71,7 +74,7 @@ These repositories are corpora, not single theorem claims. Their internal author
 
 | repository | scale |
 |---|---|
-| [msl-ore-estate](https://github.com/jaredwilder/msl-ore-estate) | Public provenance/extraction layer for the MSL mathematical estate. The release-day expansion includes the **238-row promoted catalog**, the **617-row local-PROVED transport**, theorem/witness/Day-2 vaults, correction ledgers and audit manifests. The reconstructed mine is much larger and keeps raw status separate from adjudicated mathematics. |
+| [msl-ore-estate](https://github.com/jaredwilder/msl-ore-estate) | The public mine/provenance layer: **322,370 math-bearing structured-field occurrences**, **65,834 problem-scoped unique normalized mathematical texts**, **21,146 formula/identity/inequality occurrences**, **3,306 recovered Lean declarations**, **2,858 explicit closure obligations**, a **238-row promoted catalog**, and release-day theorem/witness/local-PROVED transports. These are estate counts, with authority attached object by object. |
 | [erdos-campaign-archive](https://github.com/jaredwilder/erdos-campaign-archive) | **266 campaigns across 241 distinct Erdős problems**, 2,979 files and 215 Lean files, with successful, refuted and null routes preserved together. |
 | [erdos-cable-corpus](https://github.com/jaredwilder/erdos-cable-corpus) | **914 Lean files across 152 problems** with 937 receipts. The completed receipt join distinguishes 211 clean-footprint compiled files, 267 compile failures, 23 files containing `sorry`, 266 textually sorry-free files without a clean-footprint verdict, and 147 unjoined files. |
 | [erdos152](https://github.com/jaredwilder/erdos152) | **160 Lean statement formalizations of open Erdős problems** with a full 33-blade semantic defect audit attached. |
