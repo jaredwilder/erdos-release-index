@@ -65,6 +65,20 @@ The bridge releases the exact large-prime binomial identity, admissible LCM divi
 
 `jaredwilder/unpublished-math-papers/README.md` was refreshed to surface these Release-Day standalone packets while preserving its role as provenance/intake rather than pretending every directory is the permanent canonical home: commit `47a7944e99bd29873f763c2197c41eda33405cd2`.
 
+## Exact historical ledger transport
+
+The Day-2 theorem and quarantine ledgers are now byte-reconstructable from public gzip/base64 transport files:
+
+- theorem vault transport — commit `dc8c2c0817cc3238a91d6ecdaa77bcc3eb3dc992`
+  - reconstructed CSV bytes: `26341`
+  - SHA-256: `751fa7b59bffa6291f6c3df57bcbcaa35754bb5b0ca27f0b2c52f0edc16015f6`
+- quarantine-expanded transport — commit `68db210150d20d08ddf8a8ac603a406d6f953218`
+  - reconstructed CSV bytes: `23060`
+  - SHA-256: `a0ff8dc7e3dc7b3231bba6cc4b359fefec804ec98a9d2b79ce2799a70172d3df`
+- reconstruction/hash manifest — commit `e0685a937c119de4367210e7bce1d6e08f08572f`
+
+Together with the directly readable witness vault, the core Day-2 theorem/witness/quarantine triad is now publicly reconstructable with exact hashes.
+
 ## Authority boundary
 
 - finite remains finite;
@@ -75,4 +89,4 @@ The bridge releases the exact large-prime binomial identity, admissible LCM divi
 
 ## Saturation status
 
-**NOT SATURATED.** Remaining estate work includes exact transport of additional historical ledgers, the 1,428 contradiction history, ORE-v1 payload bytes, the 556 formalizer-obligation queue, duplicate-family reconciliation, EG203 historical-source reconciliation, Erdős #738 Lean semantic reconciliation, and the still-unprocessed MSL Estate Engine packet queue.
+**NOT SATURATED.** Remaining estate work includes the 1,428 contradiction-history transport, ORE-v1 payload bytes, the 556 formalizer-obligation queue, duplicate-family reconciliation, EG203 historical-source reconciliation, Erdős #738 Lean semantic reconciliation, and the still-unprocessed MSL Estate Engine packet queue.
