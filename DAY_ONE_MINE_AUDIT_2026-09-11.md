@@ -1,4 +1,4 @@
-# Day-One Mine Audit — what this release actually is
+# Day-One release architecture — what this mathematics release actually is
 
 **Author:** Jared Wilder  
 **Date:** 2026-09-11  
@@ -7,199 +7,176 @@
 
 ## Executive view
 
-The September 2026 release is not one paper, one theorem claim, or one corpus dump. It is a **layered public mathematical estate** built so that positive mathematics can be released quickly without erasing provenance, failed routes, finite scope, formal trust boundaries, or later corrections.
+The September 2026 release is not one paper, one theorem claim, or one corpus dump. It is a **layered public mathematical archive** designed to release substantial mathematics quickly while preserving provenance, finite scope, formal trust boundaries, failed routes, and later corrections.
 
-That architecture matters because the recovered research corpus is high-entropy. It contains real theorems, exact computations, formalizations, barriers, finite certificates, conjectural routes, rediscoveries, semantic drift, contradicted claims, and occasionally a late workflow label that is less reliable than an earlier line of mathematics.
+The recovered research corpus contains theorems, exact computations, formalizations, structural reductions, finite certificates, conjectural routes, rediscoveries, semantic mistakes, and historical workflow labels of uneven reliability. Those objects need different public homes and different kinds of checking.
 
-The release therefore separates six jobs that are often collapsed into one:
+The release therefore separates six functions:
 
-1. **Frontier:** what is actually open, and what finite/formal interfaces exist?
-2. **Mine:** what mathematical objects were recovered from the historical research estate?
-3. **Promotion:** which recovered objects survive proof replay and deserve standalone mathematical release?
-4. **Formal / computational evidence:** what exactly was kernel-checked, exhaustively searched, or independently reproduced?
-5. **Literature reconciliation:** is a true statement new, known, weaker than known, or already implicit in a classical result?
-6. **Integrity record:** what was false, superseded, semantically mismatched, or merely finite when the source rhetoric was universal?
+1. **Open-problem index** — which problems are currently open, and what finite/formal checks exist?
+2. **Research archive** — which mathematical objects were recovered from the historical estate?
+3. **Subject extraction** — which coherent results deserve focused theorem, paper, or corpus repositories?
+4. **Formal and computational evidence** — what was kernel-checked, exhaustively searched, or independently reproduced?
+5. **Literature reconciliation** — is a true statement new, known, weaker than known, or already implicit in classical work?
+6. **Correction record** — what was false, superseded, semantically mismatched, or valid only on a narrower domain?
 
-The result is intentionally not a single undifferentiated theorem count.
+These functions should not be collapsed into a single theorem count or a single mega-repository.
 
 ---
 
 ## The public layers
 
-### 1. Open-frontier layer
+### 1. Open-problem index
 
-[`open-math-frontier`](https://github.com/jaredwilder/open-math-frontier) currently exposes **9,926** structured open mathematical targets, **8,501** with executable checking procedures. Open status comes from cited external sources rather than from whether a local campaign happened to say `PROVED` or `FALSE`.
+[`open-math-frontier`](https://github.com/jaredwilder/open-math-frontier) exposes **9,926** structured open mathematical targets, **8,501** with executable checking procedures. Open status comes from cited external sources rather than from local research labels.
 
-This is the target map, not the result ledger.
+### 2. Research archive and provenance
 
-### 2. Ore / provenance layer
-
-[`msl-ore-estate`](https://github.com/jaredwilder/msl-ore-estate) is the public mine. Its release-day reconstruction records, among other surfaces:
+[`msl-ore-estate`](https://github.com/jaredwilder/msl-ore-estate) preserves the larger recovered research record. Its release-day reconstruction includes:
 
 - **322,370** math-bearing structured-field occurrences;
-- **65,834** problem-scoped unique normalized mathematical texts;
+- **65,834** problem-scoped distinct normalized mathematical texts;
 - **21,146** formula / identity / inequality occurrences;
 - **3,306** recovered Lean declarations;
-- **2,858** explicit closure obligations;
+- **2,858** explicit proof/closure obligations;
 - **1,428** contradiction / status-changing histories;
-- a **238-row promoted/curated catalog**;
-- a lossless surface of **617 latest-local `PROVED` rows across 171 problem families**.
+- a **238-entry broader curated catalog**;
+- **617** latest workflow states labelled `PROVED` across **171** problem families;
+- a newer **56-result reviewed registry** collecting particularly reusable mathematical results.
 
-The last number is deliberately *not* called 617 theorems. A local campaign status is a lead that must still survive canonical-statement, contradiction, proof, and literature review.
+The 617 historical labels are not 617 adjudicated theorems. They are research records whose underlying statements and evidence must be checked individually.
 
-### 3. Focused theorem / certificate layer
+### 3. Focused subject repositories
 
-Standalone repositories now carry results that are useful to read without reconstructing the full campaign history: exact finite classifications, theorem packages, Lean developments, search certificates, structural barriers, and focused Erdős-problem extractions.
-
-Examples include:
+Standalone repositories carry coherent mathematics that should be readable without reconstructing the entire historical research process. Examples include:
 
 - `integral-point-sets`;
 - `erdos902` and `erdos902-tournament-f4`;
-- `graham-alspach-sequenceability`, `graham-alspach-extended`, and the certificate bank;
+- the Graham–Alspach sequenceability repositories;
 - `additive-combinatorics-campaigns`;
 - `combinatorial-records`;
 - `erdos-theorems`;
+- `erdos-proved-lemmas`;
 - `erdos595-barrier-tower`;
 - `lean-contributions`;
-- `unpublished-math-papers`;
-- focused number-theory, Ramsey, Sidon, covering, sequenceability, and formalization repositories.
+- focused number-theory, Ramsey, covering, sequenceability, and formalization repositories.
 
-The release index remains the map; the focused repository is the authority for the result it actually states.
+The large `unpublished-math-papers` repository now serves as a provenance/intake archive rather than the preferred final home for every subject. Its routing rules are recorded in `SUBJECT-ROUTING.md`.
 
-### 4. Correction / semantic-court layer
+### 4. Semantic and correction audits
 
-A mass mathematical release is only credible if false late-stage claims are made harder—not easier—to resurrect.
+The release keeps false and mis-scoped claims visible so they are less likely to be repeated.
 
-The `erdos-ore-findings` court records now document **25 separate contamination cases** across `SEMANTIC_COURT_02.md` through `SEMANTIC_COURT_05.md`, in addition to the earlier Day-One forensic correction ledger.
+`erdos-ore-findings` currently records **25 distinct semantic contamination cases** across four numbered audits. Historical filenames use `SEMANTIC_COURT_*`; the public index [`SEMANTIC-AUDITS.md`](https://github.com/jaredwilder/erdos-ore-findings/blob/master/SEMANTIC-AUDITS.md) presents them as ordinary mathematical audits.
 
-The failures are not one generic model-error category. They include:
+The failures include:
 
-- max/min quantifier inversion;
-- existential/universal witness slips;
-- additive-vs-multiplicative convolution confusion;
-- finite-to-infinite gluing without a bridge theorem;
-- using an `L²` result as if it were `L∞`;
-- losing a fixed-bound hypothesis from a literature theorem;
-- reciprocal/asymptotic inequality reversal;
-- source-text corruption turning an intended problem into a vacuous one;
-- endpoint facts promoted to asymptotic laws;
+- max/min and quantifier inversion;
+- existential statements promoted to universal ones;
+- additive and multiplicative convolution confused;
+- finite constructions extended to infinite ones without proof;
+- norm mismatches such as using an `L²` theorem as `L∞`;
+- dropped hypotheses from literature results;
+- reversed asymptotic inequalities;
+- source-text corruption changing the intended problem;
+- endpoint data promoted to asymptotic laws;
 - interval membership confused with divisibility;
-- domain transfer from integer-base expansions to rational bases;
-- bounded-computation or local formal receipts promoted beyond their certified scope.
+- domain transfer without justification;
+- bounded computations or local formal checks promoted beyond their range.
 
-Where the correction is cheaply executable, a regression script is committed beside it.
-
-This is not a side project. It is part of the publication machinery.
+Where practical, regression scripts are committed beside the correction.
 
 ---
 
-## What the Day-One mine already yielded under independent attack
+## Mathematics already recovered and independently checked
 
-The current mining pass has promoted mathematics only when the statement could be independently reconstructed or recomputed.
+Examples from the release-day extraction include:
 
-Examples released from the ore include:
+- a sharp `q<=5` forcing lemma for sum-free subsets of `R`;
+- sparse-position irrationality theorems;
+- exact semiprime/binomial structure;
+- exact Erdős #85 values `f(5)=f(6)=f(7)=3`;
+- the all-prime p-adic reciprocal-sum obstruction for Erdős #289;
+- the corrected leading-`p` harmonic criterion for Erdős #291;
+- fixed-`k` finiteness for Erdős #313;
+- the `2^i3^j` multiplicative-box sumset theorem;
+- the rank-2 hereditary Chvátal theorem;
+- exact one-dimensional and quadratic construction results for Erdős #503.
 
-- a sharp `q<=5` forcing lemma for sum-free subsets of `R`, with sharpness witness;
-- infinite congruence, factorial-divisibility, nearby-divisor, and divisor-sum identity families;
-- a sparse-position irrationality theorem and related exact arithmetic packages;
-- corrected semiprime/binomial structure whose later internal “counterexample” was itself arithmetically wrong;
-- exact Erdős #85 values
-  
-  `f(5)=f(6)=f(7)=3`,
-  
-  with a self-contained `C4`-free common-neighborhood proof and exhaustive verification of every labeled graph through seven vertices.
+Several attractive stronger claims were rejected after direct checking. Those corrections remain public beside the surviving mathematics.
 
-Equally important, several attractive “closes” were rejected rather than released:
-
-- Erdős #396 `k=2` impossibility, refuted by the exact known witness `n=2480`;
-- Erdős #943 prime-exponent product formulas, which solve multiplicative rather than additive convolution;
-- Erdős #749 use of Ruzsa's square-mean theorem as a pointwise bounded-representation theorem;
-- Erdős #406 application of Senge–Straus after dropping the fixed digit-sum bound;
-- Erdős #317 use of an `1/lcm(1,...,n)` granularity bound in the wrong asymptotic direction;
-- multiple purported closes whose proposed witness did not satisfy the frozen definition at all.
-
-The governing rule is simple: **release-day urgency does not upgrade evidence.**
+The rule is simple: **release-day urgency does not upgrade evidence.**
 
 ---
 
-## A useful observation about the estate
+## Why chronology is preserved
 
-The Day-One archive is not best understood as a bag of 710/617/etc. green rows waiting to be uploaded. It is closer to a **mathematical event log**.
+The archive is best understood as a mathematical research history, not a flat list of green/red labels. Preserving chronology makes it possible to see cases where:
 
-That is more valuable.
+- a correct theorem was later falsely refuted;
+- a false theorem was repaired into a valid scoped lemma;
+- a computation remained correct while its universal interpretation failed;
+- a formal proof was technically valid but formalized the wrong statement;
+- a known theorem was independently rediscovered and therefore useful as validation but not as a novelty claim;
+- a modest historical record contained stronger mathematics than a later, more confident one.
 
-Because chronology was preserved, it is possible to observe patterns such as:
-
-- a correct theorem later being falsely refuted;
-- a false theorem later being repaired into a valid scoped lemma;
-- a computation remaining correct while its universal interpretation fails;
-- a formal proof being kernel-clean but proving the wrong semantic statement;
-- a genuine known theorem being rediscovered independently and therefore useful as a validation event but not a novelty claim;
-- a low-ranked row containing a clean theorem while a high-ranked row contains a seductive false close.
-
-A flat “best results” export would destroy that information.
+That information would disappear in a single undifferentiated “best results” export.
 
 ---
 
 ## Publication standard
 
-For the rest of release day, promotion should continue to require the following gates.
-
 ### Mathematical truth
 
-- Re-derive the proof where practical.
+- Re-derive proofs where practical.
 - Recompute exact arithmetic independently.
-- Attack endpoints, quantifiers, denominator conventions, and operation semantics.
-- For formal results, inspect what theorem actually elaborated and its dependency footprint.
+- Check endpoints, quantifiers, denominator conventions, and operation semantics.
+- For formal results, inspect the theorem that actually elaborated and its dependency footprint.
 
-### Canonical fidelity
+### Source fidelity
 
-- Compare the claim to the current canonical problem statement.
-- Do not let a strengthened or weakened formal proxy inherit the status of the original problem.
+- Compare the claim to the intended mathematical statement.
+- Do not let a stronger or weaker proxy inherit the status of the original problem.
 - Treat suspiciously vacuous hypotheses as possible source corruption until reconciled.
 
 ### Literature boundary
 
-- Truth and novelty are separate verdicts.
-- A known theorem may still deserve release as recovered provenance, formalization, or a useful corollary.
-- A theorem that appears to solve a problem still listed open requires an especially aggressive collision check before publication.
+- Mathematical truth and historical novelty are separate questions.
+- A known theorem may still deserve release as a formalization, recovered provenance record, or useful corollary.
+- A result that appears to resolve a problem still listed open requires an especially careful literature comparison.
 
 ### Reproducibility
 
-- Exact finite results should ship their verifier/certificate where feasible.
-- The verifier's scope should be stated explicitly.
-- A finite certificate must never be rhetorically promoted into a universal theorem.
+- Exact finite results should ship their verifier or certificate where feasible.
+- State the exact range/domain of the check.
+- Do not promote a finite certificate into a universal theorem.
 
-### Correction permanence
+### Corrections
 
 - False and superseded routes remain visible.
-- Corrections append; they do not silently rewrite history.
-- A later miner should be able to discover that a tempting route is dead before spending another week on it.
+- Corrections append rather than silently rewriting history.
+- A later researcher should be able to discover quickly that a tempting route has already failed.
+
+### Repository hygiene
+
+- A coherent theorem family, corpus, paper program, or substantial formalization should have a focused subject repository.
+- Large archives are for provenance and intake, not permanent editorial centralization.
+- Historical filenames may remain strange for provenance; public summaries should translate them into ordinary mathematical language.
 
 ---
 
-## Publication firewall
+## Publication boundary
 
-The mathematics release is not permission to dump the broader research estate.
+The mathematics release is not permission to publish the broader applied research estate.
 
-The controlling rule remains [`open-math-frontier/PUBLICATION-FIREWALL.md`](https://github.com/jaredwilder/open-math-frontier/blob/main/PUBLICATION-FIREWALL.md):
+The controlling rule remains [`open-math-frontier/PUBLICATION-FIREWALL.md`](https://github.com/jaredwilder/open-math-frontier/blob/main/PUBLICATION-FIREWALL.md): pure mathematics may be released after review, while unpublished biomedical, pharmacology, patient-specific, industrial, product, patent-family, private-data, and commercially sensitive embodiments remain held unless separately cleared.
 
-- standalone pure mathematics, proofs, formalizations, and non-sensitive verification infrastructure are presumptively publishable after claim review;
-- unpublished biomedical, pharmacology, patient-specific, energy/grid/battery, industrial, game-engine, product, deployment, business, patent-family, and commercially load-bearing embodiments remain held unless already deliberately released;
-- mixed artifacts are split: publish the standalone mathematics, retain the application-specific embodiment.
-
-This audit publishes no such retained applied material.
+Mixed artifacts are split: publish the standalone mathematics; retain the application-specific implementation privately.
 
 ---
 
-## What we are doing
+## What this release is doing
 
-The project is not “upload everything models ever said.”
+> **Recover the mathematical estate; preserve its chronology; check every result at the level its statement requires; place coherent mathematics in focused subject repositories; publish reproducible evidence; publish corrections locally; and keep unrelated applied IP outside the release.**
 
-It is:
-
-> **Recover the mathematical estate; preserve its chronology; attack every promotion; publish the surviving mathematics at its exact scope; publish the evidence that makes it reproducible; publish the corrections that make it falsifiable; and keep unrelated applied IP behind the firewall.**
-
-That combination—large-scale recovery *plus* theorem extraction *plus* adversarial correction *plus* reproducible certificates—is the real Day-One object.
-
-The mine is still open.
+That combination—large-scale recovery, theorem extraction, focused repositories, reproducible verification, and permanent correction records—is the Day-One release architecture.
