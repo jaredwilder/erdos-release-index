@@ -27,10 +27,12 @@ and [REPRODUCTION.md](https://github.com/jaredwilder/integral-point-sets/blob/ma
 
 ---
 
-## Read these three first
+## Start here
 
-If you only look at three, look at the ones where the work went wrong. They are the reason to
-believe the rest.
+The results that move a published number are in the next section. If you want to know why to
+trust them, the three repositories below are the reason: this program publishes its retractions,
+its false closures and its failed audits under their own names, with the same timestamps as its
+successes.
 
 | repository | what it contains |
 |---|---|
