@@ -53,6 +53,15 @@ For fixed `t`, the predicate that `t` is a sum of distinct divisors of `n` depen
 
 **Authority boundary:** elementary structural theorem. The parent asymptotic `d_t ~ c_1/(log t)^c_2` is untouched.
 
+### Erdős #17 — cluster-prime infinitude would imply Maillet
+
+Public home: `jaredwilder/erdos-proved-lemmas/erdos17-maillet-hardness-reduction.md`  
+Commit: `d04a1d241bc262ae1e1282399e8bf6f1c49ce957`
+
+If there are infinitely many cluster primes, then every positive even integer is a difference of two primes: for fixed even `N`, choose a cluster prime `p>=N+3` and apply the defining interval property.
+
+**Authority boundary:** exact hardness reduction, not progress on Maillet itself. The novelty audit classified the implication as `APPARENTLY_UNRECORDED_REDUCTION` after targeted search, with medium confidence; specialist priority checking remains required. The packet also records why an older attempted twin-prime implication was false.
+
 ## Existing headline assets this batch sits beside
 
 These were already public before Batch 05 and are not duplicated here:
@@ -75,6 +84,7 @@ In particular:
 - #655 is a complete negative answer to the **literal frozen formulation**, but is not claimed new;
 - #145 is mathematically useful but historically subsumed;
 - #727/#1212/#859 are strong exact structural statements, not parent closes;
+- #17 is a hardness implication, not a solution of either endpoint conjecture;
 - `C(13,6,3)` is a close program, not yet a close;
 - #949/#247 retain explicit specialist-priority / folklore-risk language.
 
