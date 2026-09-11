@@ -22,15 +22,22 @@ The program contains the classical sandwich, exact small cases, large formal str
 
 **Status:** major formal/computational program; candidate finite improvement with an external-catalogue dependency.
 
-### 3. Erdős #949: sharp finite constant `5` + infinite IP structure
+### 3. Erdős #949: sharp constant `5` + verified full finite-sums complement
 
-Public home: `jaredwilder/unpublished-math-papers/erdos949-sumfree-ip/`
+Public mathematics: `jaredwilder/unpublished-math-papers/erdos949-sumfree-ip/`  
+Public Lean source: `jaredwilder/erdos-theorems/theorems/erdos949-campaign-001/`
 
-For every sum-free `S⊆R`, some `q∈{1,...,5}` has both `q` and `2q` outside `S`, and 5 is sharp. The estate also proves a countably infinite finite-sums complement theorem and simultaneous avoidance under finitely many additive homomorphisms into an additive semigroup.
+For every sum-free `S⊆R`, some `q∈{1,...,5}` has both `q` and `2q` outside `S`, and 5 is sharp.
 
-**Current external calibration:** the unrestricted continuum-cardinality problem remains open. A public July 2026 report proves the continuum-sized conclusion for measurable `S` (and repairs the Baire-property case), so the countable theorem here is **not the strongest cardinality partial**; its distinct feature is that it applies to arbitrary sum-free `S` with no regularity assumption.
+More strongly, for every arbitrary sum-free `S⊆R` there is an infinite set `A⊂N_{>0}` such that **every nonempty finite sum of distinct elements of `A` lies outside `S`, and so does its double**:
 
-**Status:** paper-shaped exact theorem cluster. Targeted searches did not find the exact problem-specific countable/IP formulations or the sharp `q<=5` lemma, but folklore/specialist-priority risk remains; no global novelty certificate is claimed.
+`FS(A) ∩ S = ∅` and `2 FS(A) ∩ S = ∅`.
+
+This full Hindman-strength result strictly strengthens the earlier countable `A+A` theorem. The public `Erdos949HindmanFS.lean` source is sorry-free and has a green verification receipt: exit 0 in 6.83 seconds, SHA-256 `f4130c29f345afc9b264aa2331199433f6f0bfdd9dc7e224a49123a60970b9ac`, with two replay runs producing identical stdout. The sharp `q<=5` theorem is also independently green in `Erdos949Core.lean`.
+
+**Current external calibration:** the unrestricted continuum-cardinality problem remains open. A public July 2026 report proves the continuum-sized conclusion for measurable `S` and repairs the Baire-property case. So this is **not the strongest result by cardinality**; its different strength is that the full finite-sums conclusion holds for an arbitrary sum-free `S`, with no regularity assumption. citeturn634518search0turn634518search3
+
+**Status:** paper-shaped, formally verified exact theorem cluster. Targeted searches did not locate the exact arbitrary-`S` finite-sums formulation or the sharp `q<=5` lemma, but Hindman/folklore risk is substantial; no global historical-priority certificate is claimed.
 
 ### 4. `C(13,6,3)`: one-block exact-close frontier
 
@@ -133,10 +140,11 @@ The release includes exact extrema and complete/extensive extremizer data for si
 
 The public formal estate now includes, among other things:
 
+- the **sorry-free full finite-sums Erdős #949 theorem** plus exact verification receipts;
 - the `erdos902` tournament development;
 - 218 standalone graph-theory Lean theorem files in `lean-forge-graph-theory`;
 - the 27-file formal barrier tower in `erdos595-barrier-tower`;
-- 79 declarations across 20 files / 15 problems in `erdos-theorems` at the current indexed snapshot;
+- the growing audited source tree in `erdos-theorems`, including exact source + receipts for #949, #477, #456, #885, #936 and other campaigns;
 - a 1,473-line zero-sorry Steiner/Kirkman development in `lean-contributions`;
 - exact Roth-number values `rothNumberNat 14 = 8` and `rothNumberNat 15 = 8` in `erdos-close-campaigns`.
 
@@ -150,4 +158,4 @@ A useful example is Erdős #740: a recovered route tried to use `K_m` by asserti
 
 ## Release status
 
-This board is a snapshot, not a saturation claim. Large unreleased or incompletely reconciled surfaces remain, including contradiction histories, ORE-v1 payload bytes, semantic-review trees, formalizer obligations, historical proof archives and long-tail theorem packets.
+This board is a snapshot, not a saturation claim. Large unreleased or incompletely reconciled surfaces remain, including contradiction histories, ORE-v1 payload bytes, formalizer obligations, historical proof archives and long-tail theorem packets.
