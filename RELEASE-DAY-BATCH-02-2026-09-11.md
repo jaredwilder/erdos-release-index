@@ -92,6 +92,26 @@ Commits:
 
 The source itself labels most of these as classical/elementary/near-classical; the release preserves that and makes no automatic novelty claim.
 
+### 6. Erdős #1005 Farey campaign — recovered reduction and retraction ledger
+
+Public home: `jaredwilder/unpublished-math-papers/erdos1005-farey/`
+
+The complete July-25 internal source file named by the atlas was not present as a standalone Library artifact during this sweep, so the release is deliberately a **reconstruction from the estate atlas**, not a fabricated replacement proof packet.
+
+Recovered exact-enough mathematics includes:
+- the reachability identities `gcd(a,b)=gcd(a,rho)` and `gcd(a+1,b-1)=gcd(a+1,rho-4)` for `b=3a+rho`;
+- the even-offset obstruction, including immediate impossibility of `rho=2` and `rho=4`;
+- the `q=3p+j`, `b=3a-r` lattice-count reparameterization, with the truncated final inequality explicitly left truncated rather than guessed;
+- the sharp `rho<4` window-nesting mechanism;
+- the small-`a` local constant minimum `2/7` at `a=6` used in the `rho>=5` exclusion route;
+- the period-36 / denominator-clearing correction to a false low-order miner refusal;
+- the scaling map `(a,b,n)->(a+12,b+36,n+36)` and finite-computational reduction to the remaining two-orbit-dominance theorem.
+
+The public ledger also preserves the campaign's retractions: false interval-length monotonicity, a scoped scan reported as global, a low-order miner refusal misreported as irregularity, and wrong-variable/one-class lower-bound errors. Erdős #1005 is **not** claimed closed.
+
+Commit:
+- `c22a350bfc2ec239b4410a7df501657b4d5b640c`
+
 ## Repository hygiene repaired
 
 The top-level `unpublished-math-papers/README.md` was stale and still described the repository as five writeups despite the release tree containing a large subject archive. It has been replaced with an actual subject index and authority-boundary statement.
