@@ -89,6 +89,24 @@ believe the rest.
 | [zero-sum-theorem-closures](https://github.com/jaredwilder/zero-sum-theorem-closures) | A deterministic generator **saturating at 889 typed theorems** from 27 seeds over 7 generations, independently re-verified with **10,528,320 assignment checks and modelCalls: 0** |
 | [erdos-lean-remainder](https://github.com/jaredwilder/erdos-lean-remainder) | Two finished proofs, and **73 formalization attempts of which 70 still contain sorry** |
 
+## Published in parallel by a second session
+
+[combinatorial-records](https://github.com/jaredwilder/combinatorial-records) grew substantially
+after this index was written, from a concurrently running session. It now also holds:
+
+| topic | contents |
+|---|---|
+| **Lonely Runner, 13 effective speeds** | `lonely-runner/` — a 42-entry theorem bank from a 19-round campaign. **Court verdict: LRC(13) NOT CLOSED.** Strongest closed subproblem is the large-prime canonical class p > 2366. The file states its own authority boundary: the known proof through 12 effective speeds is an external input, later deductions are session mathematics whose historical novelty was **not certified**, and `LIVE-CERTIFIED` means a finite or computational certificate is attached, **not** proof-assistant formalization. |
+| **Ramsey R(5,5)** | `ramsey-r55/` — a pure-mathematics deep dive |
+| **Erdős 500** | `erdos500/` — a deletion-density and inheritance toolkit with ledgers |
+| **C(13,6,3)** | `covering-designs/` and `covering/` — witnesses and target-20 cover structure |
+| **Additive encodings** | `additive-encodings/` — an abstract theorem bank |
+| **Automata** | `automata/` — finite transducer monoids, quotients and robust bounds, plus an abstract Lean identity index |
+| **Witness vault** | `witness-vault/` — audited witnesses |
+
+That session publishes under the same discipline: it names what is not closed, and refuses to
+launder conditional steps into proofs.
+
 ## Earlier repositories
 
 [erdos203](https://github.com/jaredwilder/erdos203) · [erdos411](https://github.com/jaredwilder/erdos411) · [erdos902](https://github.com/jaredwilder/erdos902) · [msl-ore-estate](https://github.com/jaredwilder/msl-ore-estate)
