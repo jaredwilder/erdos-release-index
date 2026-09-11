@@ -71,7 +71,7 @@ believe the rest.
 |---|---|
 | [lean-forge-graph-theory](https://github.com/jaredwilder/lean-forge-graph-theory) | 218 Lean files on C₄-free and K₄-free structure, **0 containing `sorry`**, standalone with no Mathlib dependency |
 | [erdos-theorems](https://github.com/jaredwilder/erdos-theorems) | 79 declarations across 15 problems, **every one clean-axiom**, with `.axioms.txt` and `.verify.json` per file |
-| [erdos-cable-corpus](https://github.com/jaredwilder/erdos-cable-corpus) | 914 Lean files over 152 problems, 891 sorry-free, **unaudited and labeled so** |
+| [erdos-cable-corpus](https://github.com/jaredwilder/erdos-cable-corpus) | 914 Lean files over 152 problems. 891 are sorry-free **in the text**; joining the receipts to the files shows **211 with a clean axiom footprint and 267 that failed to compile**. Lean supplies `sorryAx` itself when elaboration fails, so textually sorry-free is not verified. The join and the per-file verdicts are published as `JOIN.json`. |
 | [erdos152](https://github.com/jaredwilder/erdos152) | 160 statement formalizations with the full defect audit, **including the 72 the gate rejected** |
 | [eg203-eg411-corpus](https://github.com/jaredwilder/eg203-eg411-corpus) | ω(N) ≥ 8 unconditional, the ω≤7 kill tree with **272,676 empty terminals**, no exceptional prime below 1.33×10¹⁴ |
 
