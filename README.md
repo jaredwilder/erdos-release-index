@@ -7,6 +7,26 @@ Author: Jared Wilder. Released 2026-09-10.
 
 ---
 
+## The release was re-checked after it was published
+
+Every verifier in these repositories was re-run from committed source on 2026-09-10/11, hours after
+going public. **All 14 exit 0.** Two took arguments that the documentation never mentioned, so no
+reader could have invoked them; both are now documented.
+
+The headline computation was re-run too. The exhaustive exact-integer sweep behind
+**d(2,8) > 30000** reproduced its committed receipt in **every field but the wall clock** -
+136,801,313 cells, 6 solutions, 0 non-trivial, correctness gate 6/6, all six solution records
+byte-identical including their exact coordinates over Q(sqrt 2002).
+
+The cover verifier is the one to look at: it **rejects** the 8-block receipt and names the two
+pairs it fails to cover. A verifier that only ever agrees is indistinguishable from one that does
+nothing.
+
+Details: [RUNNING-THE-VERIFIERS.md](https://github.com/jaredwilder/erdos-campaign-archive/blob/main/RUNNING-THE-VERIFIERS.md)
+and [REPRODUCTION.md](https://github.com/jaredwilder/integral-point-sets/blob/main/REPRODUCTION.md).
+
+---
+
 ## Read these three first
 
 If you only look at three, look at the ones where the work went wrong. They are the reason to
