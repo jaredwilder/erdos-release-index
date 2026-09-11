@@ -28,7 +28,9 @@ Public home: `jaredwilder/unpublished-math-papers/erdos949-sumfree-ip/`
 
 For every sum-free `S⊆R`, some `q∈{1,...,5}` has both `q` and `2q` outside `S`, and 5 is sharp. The estate also proves a countably infinite finite-sums complement theorem and simultaneous avoidance under finitely many additive homomorphisms into an additive semigroup.
 
-**Status:** paper-shaped exact theorem cluster. Targeted searches did not find the exact problem-specific formulations, but folklore/specialist-priority risk remains; no global novelty certificate is claimed.
+**Current external calibration:** the unrestricted continuum-cardinality problem remains open. A public July 2026 report proves the continuum-sized conclusion for measurable `S` (and repairs the Baire-property case), so the countable theorem here is **not the strongest cardinality partial**; its distinct feature is that it applies to arbitrary sum-free `S` with no regularity assumption.
+
+**Status:** paper-shaped exact theorem cluster. Targeted searches did not find the exact problem-specific countable/IP formulations or the sharp `q<=5` lemma, but folklore/specialist-priority risk remains; no global novelty certificate is claimed.
 
 ### 4. `C(13,6,3)`: one-block exact-close frontier
 
@@ -116,6 +118,7 @@ The release includes exact extrema and complete/extensive extremizer data for si
 
 ## Tier 3 — useful exact barriers and reductions
 
+- **#17:** infinitude of cluster primes would imply that every positive even integer is a difference of two primes (Maillet). Targeted audit found no tracker match; this is a hardness reduction, not a solution of either conjecture.
 - **#655:** the literal frozen statement is false: regular `n`-gons satisfy its circle condition and have exactly `floor(n/2)` distances. Complete negative answer to that formulation; already-public/known mathematics, not claimed novel.
 - **#145:** squarefree-gap moments exist for every fixed `0<=alpha<=1`; `alpha=1` has limit 1. Historically subsumed by stronger results; retained as a clean proof slice.
 - **#727:** for every prime `p>=7`, `n=2p-2` gives `((n+2)!)^2 ∤ (2n)!`; infinite exact obstruction family.
