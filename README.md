@@ -10,6 +10,65 @@ For the broader cross-subject map and historical-scale comparison, see [`open-ma
 
 ---
 
+## Focused subject homes
+
+Use these repositories to follow a mathematical program and its current
+proof, computation and correction record. The global routing was reconciled
+with live public repository trees on 2026-09-13: the eighteen homes identified
+in the Round-13 estate audit and ten other existing homes now have direct links
+here. These are existing public programs, not newly claimed theorem closures.
+
+### Graph theory and Ramsey programs
+
+| Subject | Preferred home | Scope and evidence boundary |
+|---|---|---|
+| #20: sunflower families | [erdos20-sunflower](https://github.com/jaredwilder/erdos20-sunflower) | Formal supporting lemmas, constructions and finite counterexamples; the parent conjecture is not closed. |
+| #146: degenerate Turán | [erdos146-degenerate-turan](https://github.com/jaredwilder/erdos146-degenerate-turan) | Minimum-degree extraction, sparsity and reductions, with 51 named historical Lean checks; embedding and extremal-bound assembly remain. |
+| #500: Turán (3,4) | [erdos500-turan34](https://github.com/jaredwilder/erdos500-turan34) | Density staircases, plateau structure, theorem bank and explicitly unproved targets. |
+| #592: ordinal Ramsey | [erdos592-ordinal-ramsey](https://github.com/jaredwilder/erdos592-ordinal-ramsey) | Formal ordinal framework and conditional reductions; imported literature hypotheses remain explicit. |
+| #593: obligatory hypergraphs | [erdos593-obligatory-hypergraphs](https://github.com/jaredwilder/erdos593-obligatory-hypergraphs) | Finite witnesses, formal reductions and conditional separations; literature assumptions are not promoted to unconditional proofs. |
+| #1066: unit distance | [erdos1066-unit-distance](https://github.com/jaredwilder/erdos1066-unit-distance) | Geometric/coloring lemmas, formal statement layer and obstruction program; parent problem not closed. |
+| Caccetta–Häggkvist triangles | [caccetta-haggkvist-triangles](https://github.com/jaredwilder/caccetta-haggkvist-triangles) | Minimum-counterexample structure, boundary identities and inequalities, with correction history; conjecture not claimed solved. |
+| P6 Erdős–Hajnal | [p6-erdos-hajnal](https://github.com/jaredwilder/p6-erdos-hajnal) | Structural theorem program, finite checks, retired routes and named closure obligations; flagship remains unproved. |
+| 41-vertex (5,5)-Ramsey circulant | [ramsey-r55-circulant-41](https://github.com/jaredwilder/ramsey-r55-circulant-41) | Exact witness structure, symmetries and extension obstructions; not a new global Ramsey lower bound. |
+| #738: induced trees | [erdos738-triangle-free-induced-trees](https://github.com/jaredwilder/erdos738-triangle-free-induced-trees) | Theorem bank, triangle-free graph structure, finite checks and explicitly labeled search targets. |
+| Erdős–Gyárfás power-of-two cycles | [erdos-gyarfas-power-of-two-cycles](https://github.com/jaredwilder/erdos-gyarfas-power-of-two-cycles) | Cycle-spectrum results, finite classifications and construction barriers; general degree-three target remains unresolved. |
+| Fiber coherence and cycle rank | [fiber-coherence-cycle-rank](https://github.com/jaredwilder/fiber-coherence-cycle-rank) | Coherence criteria, cycle-rank obstruction classifications, graph/CSP theory and mapped proof dependencies. |
+| #77: diagonal Ramsey exponential limit | [diagonal-ramsey-corridor](https://github.com/jaredwilder/diagonal-ramsey-corridor) | 23-card program: unconditional thin-corridor equivalence, exact structural lemmas, conditional limit criterion and construction barriers; limit existence not proved. |
+| #74: bipartite defect | [erdos74-bipartite-defect](https://github.com/jaredwilder/erdos74-bipartite-defect) | Bounded finite-subgraph defect implies a finite coloring bound; formal finite-vertex guard and explicit infinite-set calibration. |
+
+### Additive and multiplicative number theory
+
+| Subject | Preferred home | Scope and evidence boundary |
+|---|---|---|
+| #142: progression-free sets | [erdos142-progression-free](https://github.com/jaredwilder/erdos142-progression-free) | Behrend embedding, greedy ternary structure, carry/rigidity analysis and barriers; source claims retain their stated ranges. |
+| #1192: representation energy | [erdos1192-representation-energy](https://github.com/jaredwilder/erdos1192-representation-energy) | Corrected Cauchy–Schwarz inequalities and basis-density constraints, including the r·2^k cutoff; general construction unresolved. |
+| Lonely Runner: 13 effective speeds | [lonely-runner-13](https://github.com/jaredwilder/lonely-runner-13) | Exact finite statements, structural normal forms and source packets; restricted results separated from the general conjecture. |
+| #271: Stanley sequences | [erdos271-stanley-sequences](https://github.com/jaredwilder/erdos271-stanley-sequences) | Independent-sequence structure, scaling/shift theory, spectra and theorem banks with open boundaries. |
+| #949: finite-sum avoidance | [erdos949-finite-sums](https://github.com/jaredwilder/erdos949-finite-sums) | Finite and countable results with a Lean core; the continuum-sized sum-free-subset target remains separate. |
+| #850: radical coincidences | [erdos850-radical-coincidences](https://github.com/jaredwilder/erdos850-radical-coincidences) | Structural pruning, verified controls and the recorded finite search frontier; the infinite three-term problem is not closed. |
+| #273: covering systems | [erdos273-covering-systems](https://github.com/jaredwilder/erdos273-covering-systems) | Exact parity-split reduction, finite search/SAT ladder, controls and corrections; no full permitted-modulus covering established. |
+| #39: Sidon density | [erdos39-sidon-density](https://github.com/jaredwilder/erdos39-sidon-density) | Formal finite bounds and an infinite greedy construction, with executable controls; no near-square-root-density solution. |
+| #890 / #1093: divisor-window bridge | [erdos890-1093-divisor-window](https://github.com/jaredwilder/erdos890-1093-divisor-window) | Exact divisor-window coordinates, deficiency/excess identities and source evidence; parent problems and priority questions remain separate. |
+| #1061: aliquot squares | [erdos1061-aliquot-square](https://github.com/jaredwilder/erdos1061-aliquot-square) | Explicit generator, primitive-ray scaling and certificate provenance; exact recovered CSV transport remains a separately tracked item. |
+| Rado-equation avoidance atlas | [rado-equation-avoidance-atlas](https://github.com/jaredwilder/rado-equation-avoidance-atlas) | Reader-facing relation-family framework and provenance; inspect the source-recovery map for numerical-table availability. |
+
+### Finite classifications, codes and transport
+
+| Subject | Preferred home | Scope and evidence boundary |
+|---|---|---|
+| Finite-field extremal sets | [finite-field-extremal-sets](https://github.com/jaredwilder/finite-field-extremal-sets) | Three exact F31/Z31/F73 classifications, complete maximizing sets, recovered original verifiers and passing Python/C/C++ checks. |
+| Constant-GC reverse-complement codes | [constant-gc-reverse-complement-codes](https://github.com/jaredwilder/constant-gc-reverse-complement-codes) | Exact finite code/witness lane and graph definition, with independent verification and the length-eight frontier explicitly separated. |
+| Strongly regular graph transport | [strongly-regular-graph-transport-atlas](https://github.com/jaredwilder/strongly-regular-graph-transport-atlas) | 119-row source atlas and transport ledger, exact source hashes, typed relations and one-sided limits. |
+
+### Compact theorem and correction routes
+
+- [#251: finite dyadic-prefix denominators](https://github.com/jaredwilder/erdos-findings-ledger/blob/main/theorems/ERDOS-251-DYADIC-PREFIX-DENOMINATOR.md) — keep the origin-0 and origin-1 conventions separate; this does not prove irrationality of the infinite series.
+- [#1212: fixed-row coprime-run coordinate](https://github.com/jaredwilder/erdos-findings-ledger/blob/main/theorems/ERDOS-1212-ROW-RUN-COORDINATE.md) — the campaign's dual run function is explicitly defined; this is separate from the isolated-vertex family and the global path problem.
+- [#289: all-prime reciprocal-sum obstruction](https://github.com/jaredwilder/erdos-proved-lemmas/blob/master/erdos289-padic-reciprocal-obstructions.md) — written universal argument, with narrower formal/finite components identified separately.
+- [#486: quantitative summable-forbidden-mass theorem](https://github.com/jaredwilder/erdos-proved-lemmas/blob/master/erdos486-summable-forbidden-mass.md) — density, tail-error bound and positive-density corollary under the explicit activation rule n<m.
+- [Corrections and quarantined claims](https://github.com/jaredwilder/msl-ore-estate/blob/main/MATH-QUARANTINE-AND-CORRECTIONS.md) — proposition-level corrections; historical route status is not proof authority.
+
 ## Results first
 
 ### Published-number and finite-range advances
