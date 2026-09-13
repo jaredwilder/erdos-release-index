@@ -66,7 +66,9 @@ here. These are existing public programs, not newly claimed theorem closures.
 - [#251: finite dyadic-prefix denominators](https://github.com/jaredwilder/erdos-findings-ledger/blob/main/theorems/ERDOS-251-DYADIC-PREFIX-DENOMINATOR.md) — keep the origin-0 and origin-1 conventions separate; this does not prove irrationality of the infinite series.
 - [#1212: fixed-row coprime-run coordinate](https://github.com/jaredwilder/erdos-findings-ledger/blob/main/theorems/ERDOS-1212-ROW-RUN-COORDINATE.md) — the campaign's dual run function is explicitly defined; this is separate from the isolated-vertex family and the global path problem.
 - [#289: all-prime reciprocal-sum obstruction](https://github.com/jaredwilder/erdos-proved-lemmas/blob/master/erdos289-padic-reciprocal-obstructions.md) — written universal argument, with narrower formal/finite components identified separately.
+- [#477: all integer quadratics](https://github.com/jaredwilder/erdos-proved-lemmas/blob/master/erdos477-all-quadratics.md) — complete written proof that no degree-2 image uniquely tiles Z; the square-case Lean layer is separate.
 - [#486: quantitative summable-forbidden-mass theorem](https://github.com/jaredwilder/erdos-proved-lemmas/blob/master/erdos486-summable-forbidden-mass.md) — density, tail-error bound and positive-density corollary under the explicit activation rule n<m.
+- [#949: complement cardinality](https://github.com/jaredwilder/erdos949-finite-sums/blob/main/human/complement-cardinality.md) — written doubling-injection proof; not a continuum-sized finite-sums construction, and no kernel-check claim for this child.
 - [Corrections and quarantined claims](https://github.com/jaredwilder/msl-ore-estate/blob/main/MATH-QUARANTINE-AND-CORRECTIONS.md) — proposition-level corrections; historical route status is not proof authority.
 
 ## Results first
