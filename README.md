@@ -10,6 +10,20 @@ For the broader cross-subject map and historical-scale comparison, see [`open-ma
 
 ---
 
+## Added 2026-09-14
+
+These were finished earlier but had never been published.
+
+| where | what |
+|---|---|
+| [ramsey-r55-circulant-41/lean-proof](https://github.com/jaredwilder/ramsey-r55-circulant-41/tree/main/lean-proof) | One Lean file with no imports that proves **R(3,3)=6, R(3,4)=9, R(3,5)=14 and R(4,4)=18** exactly, plus 25 ≤ R(4,5) ≤ 31 and 42 ≤ R(5,5) ≤ 62. The values are classical; what's new is getting all of them from the definition with one method. |
+| [erdos411/defect-calculus](https://github.com/jaredwilder/erdos411/tree/main/defect-calculus) | A kernel-checked **if-and-only-if description of every solution of 3φ(N) = 2N + 2**: each solution is a smaller number with a known defect times one prime, and that prime is determined exactly. It also includes the 2-adic balance law and the prime ladder. r=2 stays open. |
+| [erdos902-tournament-f4/structural-proof](https://github.com/jaredwilder/erdos902-tournament-f4/tree/main/structural-proof) | The f(4) ≥ 49 argument as **one Lean theorem**: no S4 tournament on 4–48 vertices, given one named input about the two surviving DRT(23,11,5) classes. It comes with 35 certificates ruling out the other classes. |
+| [riemann-hypothesis](https://github.com/jaredwilder/riemann-hypothesis) | The working records for **epochs 20–32**, **297 Lean theorems** from that stretch (215 accepted by the kernel, 82 not, all with receipts) and the first-rung interval certification. The highlight is a Lean restatement of RH, about Mathlib's actual `riemannZeta`, as the squared zero offsets summing to zero in every window. RH stays open. |
+| [erdos-campaign-archive/…/erdos513-close-packet](https://github.com/jaredwilder/erdos-campaign-archive/tree/main/campaigns/erdos513-close-packet-2026-08-11) | Erdős 513: a candidate exact value **B = 1/A\* ≈ 0.58507882**, reduced to two unproved statements, with tests and Lean targets. |
+
+---
+
 ## Focused subject homes
 
 Use these repositories to follow a mathematical program and its current
