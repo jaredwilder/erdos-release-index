@@ -47,6 +47,60 @@ The exact scope is:
 
 The surviving open bridge is **tail-controlled reconstruction** for the infinite architecture. This package is explicitly a method/reconstruction result: it does **not** prove anything new about the actual zeta zeros and does **not** prove RH.
 
+### RH auxiliary theorem extraction
+
+Two additional Round-26 auxiliary theorems are now reader-facing:
+
+- [`top-k-angular-schur-positivity.md`](https://github.com/jaredwilder/riemann-hypothesis/blob/main/auxiliary-theorems/top-k-angular-schur-positivity.md) — a finite-variable rectangular Schur theorem: if `r` times the sum of the `k` largest absolute variable arguments is `< π/2`, then `s_(r^k)>0`; the Toeplitz determinant detector-delay bound is a corollary. The finite proof was explicitly rechecked by the final source court; historical novelty is plausible but unresolved.
+- [`critical-value-squared-gap-monotonicity.md`](https://github.com/jaredwilder/riemann-hypothesis/blob/main/auxiliary-theorems/critical-value-squared-gap-monotonicity.md) — for the finite real-rooted backward-heat-flow polynomial model, `|H_t(c_j)|/(x_{j+1}-x_j)^2` is nondecreasing, with the symmetric two-zero equality case retained. The entire-function extension still requires convergence control.
+
+Neither theorem is presented as an RH result.
+
+### Erdős–Gyárfás structural spine
+
+The existing 202-card public forge already contained DS05–DS18, but the strongest chain was effectively buried in machine-readable cards. It now has a human theorem surface:
+
+[`erdos-gyarfas-power-of-two-cycles/STRUCTURAL-SPINE-DS05-DS18.md`](https://github.com/jaredwilder/erdos-gyarfas-power-of-two-cycles/blob/main/STRUCTURAL-SPINE-DS05-DS18.md)
+
+The chain is: exact cubic-surplus identity → bounded `3S` cubic defect kernel → fixed-surplus `6t` exceptional core → quotient cycle doubling → exact elimination of the `|A|=2|B|` and `|A|=2|B|+1` branches. These are source-proved structural results; historical novelty is unrun and the Erdős–Gyárfás conjecture remains open.
+
+### Caccetta–Häggkvist exact-boundary C4 chain
+
+A human extraction now exposes the strongest source-supported exact-boundary fourth-moment theorem:
+
+[`caccetta-haggkvist-triangles/EXACT-BOUNDARY-C4-CHAIN.md`](https://github.com/jaredwilder/caccetta-haggkvist-triangles/blob/main/EXACT-BOUNDARY-C4-CHAIN.md)
+
+For the stated triangle-free oriented `3d`-vertex `d`-outregular kernel, the source chain gives
+
+```text
+C4(D) ≥ ceil(3d^3/2),
+tr(A^4) ≥ 6d^3,
+```
+
+plus the exact skew-energy decomposition. The recovered packet labels the central result a supported terminal asset, but this publication does **not** claim a fresh independent checker/Lean replay; the flagship conjecture stays open.
+
+### Erdős #271 Stanley-sequence correction and theorem map
+
+The #271 front door incorrectly described the structural endpoint in terms of **maximum** reflection multiplicity. The final audited theorem is instead controlled by **mean oriented-reflection multiplicity**
+
+```text
+μ_k = binom(k,2)/|U_k|.
+```
+
+The README is corrected and the exact dictionary is now public at:
+
+[`erdos271-stanley-sequences/REFLECTION-MULTIPLICITY-GROWTH.md`](https://github.com/jaredwilder/erdos271-stanley-sequences/blob/main/REFLECTION-MULTIPLICITY-GROWTH.md)
+
+For fixed seed, the audited reduction is `a_k = Θ(k+k^2/μ_k)`; with the external superlinearity input this becomes `a_k = Θ(k^2/μ_k)`. The `A(4)` `k^2/log k` target becomes exactly a `μ_k = Θ(log k)` target. The asymptotic itself remains open.
+
+### Lonely Runner front-door repair
+
+The focused `lonely-runner-13` repository already contained the closed large-prime canonical residue theorem, but its root README did not surface it. The front door now leads with the exact closed subproblem and its proof architecture:
+
+[`lonely-runner-13/LARGE-PRIME-CANONICAL-CLOSURE.md`](https://github.com/jaredwilder/lonely-runner-13/blob/main/LARGE-PRIME-CANONICAL-CLOSURE.md)
+
+For every prime `p>2366`, a primitive 13-speed tuple satisfying `u_i ≡ i (mod p)` is not a counterexample. Full LRC(13) remains open.
+
 ## Older “unpublished” flags that are already resolved live
 
 Recursive live-tree inspection confirms that several older debt flags were stale retrieval/index results rather than real publication gaps:
@@ -110,4 +164,4 @@ The release follows four invariants:
 3. **Publication is not authority.** A public file does not become a proof merely because it is visible.
 4. **Exact-source recovery is byte-level.** When a historical artifact is hash-pinned, do not silently replace it with a regenerated equivalent.
 
-As of this audit, the main remaining publication debt is concentrated in exact supporting bytes and provenance recovery rather than hidden reader-facing theorem programs.
+The audit remains live: source archaeology can still expose under-routed theorem identities. The hard residue is increasingly concentrated in exact supporting bytes, specialist prior-art courts, and reader-facing extraction from already-public machine/provenance layers.
