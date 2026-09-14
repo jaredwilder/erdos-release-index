@@ -31,6 +31,22 @@ It points to two already-public exact negative programs:
 1. [`combinatorial-records/ramsey/conference-switching-book-elimination.md`](https://github.com/jaredwilder/combinatorial-records/blob/main/ramsey/conference-switching-book-elimination.md): for every symmetric conference matrix of order `N=4m+2`, no diagonal `±1` switching simultaneously avoids `B_m` while the complement avoids `B_(m+1)`. The `N=398`, `B_99/B_100` case is a corollary. This eliminates a construction class, not arbitrary graphs.
 2. [`combinatorial-records/findings/circulant-ramsey-family-elimination.md`](https://github.com/jaredwilder/combinatorial-records/blob/main/findings/circulant-ramsey-family-elimination.md): complete circulant-family exhaustions at `R(3,10), n=40` and `R(4,6), n=36`, covering 1,048,575 and 262,143 connection sets respectively, with zero survivors. These are family eliminations, not new unrestricted Ramsey-number bounds.
 
+### RH finite-prefix / finite-spectrum reconstruction boundary
+
+Round 23 contained a coherent theorem package that was present in the canonical forensic estate but not found on the live RH tree under its exact statements. It is now public at:
+
+[`riemann-hypothesis/method-obstructions/finite-prefix-reconstruction-boundary-2026-09-14.md`](https://github.com/jaredwilder/riemann-hypothesis/blob/main/method-obstructions/finite-prefix-reconstruction-boundary-2026-09-14.md)
+
+The exact scope is:
+
+- the Bernoulli / Hausdorff / coefficient cross-representation identities;
+- the fact that the two-dimensional `H_{n,q}` lattice contains no independent numerical information beyond the boundary row `H_{n,0}`;
+- **finite-spectrum reconstruction:** for known spectrum size `m`, `H_{0,0},...,H_{m-1,0}` together with `a_0` determine all coefficients of `G` and hence every Toeplitz determinant;
+- **arbitrary-depth no-go in both directions:** no fixed finite Hausdorff sign rectangle forces global determinant positivity, and no fixed finite determinant rectangle forces global Hausdorff positivity;
+- no finite mixed `H/D` sign battery from these generic hierarchies characterizes the full positive-real spectral cone.
+
+The surviving open bridge is **tail-controlled reconstruction** for the infinite architecture. This package is explicitly a method/reconstruction result: it does **not** prove anything new about the actual zeta zeros and does **not** prove RH.
+
 ## Older “unpublished” flags that are already resolved live
 
 Recursive live-tree inspection confirms that several older debt flags were stale retrieval/index results rather than real publication gaps:
